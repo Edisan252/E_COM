@@ -3,7 +3,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
-import Typography from '@mui/material/Typography';
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
 import { styled, alpha } from '@mui/material/styles';
@@ -66,7 +65,7 @@ function Header() {
         <Router >
         <Grid container spacing={1} sx={{bgcolor: '#ecf0f3', padding: '5px',borderRadius:'10px'}}>
         <Grid xs>
-        <img src="../logo.svg" alt="" height={100} width={250} />
+        <img src="../assets/logo.svg" alt="" height={100} width={250} />
         </Grid>
         <Grid xs={5}>
         <Search sx={{marginTop:'20px',height:'50px',bgcolor:'white'}}>
