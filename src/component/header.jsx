@@ -65,7 +65,7 @@ function Header() {
         <Router >
         <Grid container spacing={1} sx={{bgcolor: '#ecf0f3', padding: '5px',borderRadius:'10px'}}>
         <Grid xs>
-        <img src="../assets/logo.svg" alt="" height={100} width={250} />
+        <img src={require('../assets/logo.svg')} alt="" height={100} width={250} />
         </Grid>
         <Grid xs={5}>
         <Search sx={{marginTop:'20px',height:'50px',bgcolor:'white'}}>
