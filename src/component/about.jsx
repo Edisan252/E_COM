@@ -11,13 +11,13 @@ const About = () =>{
         Iusto neque maiores ut iure illum ea, id eum distinctio quo adipisci assumenda sint vero quam eveniet excepturi, fugit optio saepe quaerat! Rerum, animi cupiditate architecto accusamus quisquam voluptatibus praesentium.</p>
         <Carousel>
       <Carousel.Item interval={500}>
-        <img src='../medical.png' height={800} width={1900}/>
+        <img src={require('../assets/logo1.png')} alt="" height={100} width={250} />
       </Carousel.Item>
       <Carousel.Item interval={300}>
-      <img src='../medical.png' height={800} width={1900}/>
+     <img src={require('../assets/logo1.png')} alt="" height={100} width={250} />
       </Carousel.Item>
       <Carousel.Item interval={300}>
-      <img src='../medical.png' height={800} width={1900}/>
+     <img src={require('../assets/logo1.png')} alt="" height={100} width={250} />
       </Carousel.Item>
     </Carousel>
         </div>
