@@ -7,13 +7,13 @@ function Home() {
     <>
     <Carousel style={{marginTop:'20px'}}>
       <Carousel.Item interval={500}>
-        <img src={require('../assets/s1.webp')} height={500} width={1800}/>
+        <img src={require('../assets/s1.webp')} alt="" height={500} width={1800}/>
       </Carousel.Item>
       <Carousel.Item interval={300}>
-      <img src={require('../assets/s2.webp')} height={500} width={1800}/>
+      <img src={require('../assets/s2.webp')} alt=""  height={500} width={1800}/>
       </Carousel.Item>
       <Carousel.Item interval={300}>
-      <img src={require('../assets/s3.webp')} height={500} width={1800}/>
+      <img src={require('../assets/s3.webp')} alt=""  height={500} width={1800}/>
       </Carousel.Item>
     </Carousel>
     </>
