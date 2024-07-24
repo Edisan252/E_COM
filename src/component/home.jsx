@@ -5,15 +5,15 @@ import Carousel from 'react-bootstrap/Carousel';
 function Home() {
   return (
     <>
-    <Carousel>
+    <Carousel style={{marginTop:'20px'}}>
       <Carousel.Item interval={500}>
-        <img src='../medical.png' height={800} width={1900}/>
+        <img src={require('../assets/s1.webp')} height={500} width={1800}/>
       </Carousel.Item>
       <Carousel.Item interval={300}>
-      <img src='../medical.png' height={800} width={1900}/>
+      <img src={require('../assets/s2.webp')} height={500} width={1800}/>
       </Carousel.Item>
       <Carousel.Item interval={300}>
-      <img src='../medical.png' height={800} width={1900}/>
+      <img src={require('../assets/s3.webp')} height={500} width={1800}/>
       </Carousel.Item>
     </Carousel>
     </>

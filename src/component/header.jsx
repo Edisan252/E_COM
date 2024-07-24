@@ -8,6 +8,8 @@ import InputBase from '@mui/material/InputBase';
 import { styled, alpha } from '@mui/material/styles';
 import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom";
 import {FaRegUserCircle,FaCartPlus} from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Login from './login';
 import About from './about';
 import Home from './home';
@@ -15,9 +17,7 @@ import '../design/view.css';
 
 
 function Header() {
-  const Carthandle=()=>{
-    alert("Add Card List");
-  }
+  const notify = () => toast("Add Card List");
   const Search = styled('div')(({ theme }) => ({
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
@@ -61,14 +61,14 @@ function Header() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="xxl">
-        <Box sx={{height: '100vh' }} >
+        <Box sx={{bgcolor:'#f0f0f0',height: '100vh' }} >
         <Router >
-        <Grid container spacing={1} sx={{bgcolor: '#ecf0f3', padding: '5px',borderRadius:'10px'}}>
+        <Grid container spacing={1} sx={{bgcolor:'white',padding: '3px',borderRadius:'5px'}}>
         <Grid xs>
-        <img src={require('../assets/logo.svg')} alt="" height={100} width={250} />
+        <img src={require('../assets/logo1.png')} alt="" height={100} width={250} />
         </Grid>
         <Grid xs={5}>
-        <Search sx={{marginTop:'20px',height:'50px',bgcolor:'white'}}>
+        <Search sx={{marginTop:'20px',height:'50px',bgcolor:'#f0f0f0'}}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -85,14 +85,14 @@ function Header() {
                         <li><Link to="/home">Home</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                         <li><Link to="/login"><FaRegUserCircle/> Login</Link></li>
-                        <li><button style={{border:'none',backgroundColor:'#ecf0f3'}} onClick={Carthandle}><FaCartPlus/></button></li>
+                        <li><button style={{border:'none',backgroundColor:'white'}} onClick={notify}><FaCartPlus/></button><ToastContainer /></li>
                     </ul>
                     
                     </div>
         </Grid>
       </Grid>
       <Routes>
-                        <Route path="/" element={<Home/>}></Route>
+                        <Route path="/home" element={<Home/>}></Route>
                         <Route path="/about"element={<About />}></Route>
                         <Route path="/login"element={<Login />} ></Route>
                     </Routes>
