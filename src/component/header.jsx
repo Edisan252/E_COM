@@ -82,7 +82,7 @@ function Header() {
           <div className='top1'>
        
                     <ul>
-                        <li><Link to="/home">Home</Link></li>
+                        <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                         <li><Link to="/login"><FaRegUserCircle/> Login</Link></li>
                         <li><button style={{border:'none',backgroundColor:'white'}} onClick={notify}><FaCartPlus/></button><ToastContainer /></li>
