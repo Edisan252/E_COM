@@ -36,24 +36,25 @@ function Login() {
   return (
     <div className="App">
       <div>
-        {profile ? (
-          <div>
-            <img src={profile.picture} alt="user" style={{borderRadius:'50%'}} />
-            <h3>User Logged in</h3>
-            <p>Name: {profile.name}</p>
-            <p>Email Address: {profile.email}</p>
-            <br />
-            <br />
-            <button onClick={logOut}>Log out</button>
+              <h2>React Google Login</h2>
+              <br />
+              <br />
+              {profile ? (
+                  <div>
+                      <img src={profile.picture} alt="user image" />
+                      <h3>User Logged in</h3>
+                      <p>Name: {profile.name}</p>
+                      <p>Email Address: {profile.email}</p>
+                      <br />
+                      <br />
+                      <button onClick={logOut}>Log out</button>
+                  </div>
+              ) : (
+                  <button onClick={login}>Sign in with Google 🚀 </button>
+              )}
           </div>
-        ) : (<div><br/>
-          <button style={{padding:'20px',backgroundColor:'#448AFF',border:'none',borderRadius:'30px',color:'white'}} onClick={login_go}>Sign in with Google 🚀</button>
-          <h1>ndkko</h1>
-          </div>
-        )}
       </div>
-    </div>
-  );
-}
-
-export default Login;
+    );
+  }
+  
+  export default Login;
