@@ -4,7 +4,8 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Home() {
   return (
-    <>
+    <><br/>
+    <div>
     <Carousel style={{marginTop:'20px'}}>
       <Carousel.Item interval={500}>
         <img src={require('../assets/s1.webp')} alt="" height={500} width={1800}/>
@@ -16,6 +17,7 @@ function Home() {
       <img src={require('../assets/s3.webp')} alt=""  height={500} width={1800}/>
       </Carousel.Item>
     </Carousel>
+    </div>
     </>
   );
 }

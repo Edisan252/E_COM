@@ -61,9 +61,9 @@ function Header() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="xxl">
-        <Box sx={{bgcolor:'#f0f0f0',height: '100vh' }} >
+        <Box sx={{bgcolor:'rgba(247, 228, 196, 0.922)',height: 'auto' }} >
         <Router >
-        <Grid container spacing={1} sx={{bgcolor:'white',padding: '3px',borderRadius:'5px'}}>
+        <Grid container spacing={5} sx={{bgcolor:'white',padding: '2px',borderRadius:'5px',marginLeft:'25px',maxWidth:'1930px'}}>
         <Grid xs>
         <img src={require('../assets/logo1.png')} alt="" height={100} width={250} />
         </Grid>
@@ -98,6 +98,7 @@ function Header() {
                     </Routes>
                     </Router>
         </Box>
+        
       </Container>   
     </React.Fragment>
   );

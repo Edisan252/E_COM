@@ -1,26 +1,34 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from 'react-bootstrap/Carousel';
 const About = () =>{
     return(
-        <div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, quibusdam rerum nihil sed, voluptas excepturi maiores sequi neque aliquam hic consequuntur, perferendis et unde? Tempora laborum praesentium asperiores voluptatem modi!
-        Alias reprehenderit, quae non inventore ullam error neque quod et. Dicta est ut blanditiis architecto perspiciatis tenetur saepe fuga ullam similique? Ipsum provident dolorem sit. Sapiente magni animi laudantium iure?
-        Fuga laborum velit quaerat laboriosam obcaecati, rem dolore expedita libero, ex nesciunt, quo autem nulla distinctio exercitationem consectetur et? Obcaecati ratione tempora quidem, laudantium nam culpa maiores sequi architecto esse.
-        Sunt tempore nam eveniet esse laudantium? Cum quos quae laudantium eaque deleniti architecto facilis beatae perferendis non veniam adipisci fuga officiis, ipsum dolor accusamus ratione? Expedita, est distinctio? Repellendus, totam.
-        Iusto neque maiores ut iure illum ea, id eum distinctio quo adipisci assumenda sint vero quam eveniet excepturi, fugit optio saepe quaerat! Rerum, animi cupiditate architecto accusamus quisquam voluptatibus praesentium.</p>
-        <Carousel>
-      <Carousel.Item interval={500}>
-        <img src={require('../assets/logo1.png')} alt="" height={100} width={250} />
-      </Carousel.Item>
-      <Carousel.Item interval={300}>
-     <img src={require('../assets/logo1.png')} alt="" height={100} width={250} />
-      </Carousel.Item>
-      <Carousel.Item interval={300}>
-     <img src={require('../assets/logo1.png')} alt="" height={100} width={250} />
-      </Carousel.Item>
-    </Carousel>
-        </div>
+      <div className="about-container mt-5">
+        <img src={require('../assets/founder.jpeg')} alt="" />
+      <h1>About Us</h1>
+      <p>Welcome to our eCommerce store. We are dedicated to providing the best products and services to our customers.
+      At eCommerce store, we are committed to delivering exceptional value through our carefully curated selection of products/services
+      . Our mission is to offer an unparalleled shopping experience that combines quality, affordability, 
+      and convenience. We aim to exceed your expectations with every purchase, ensuring you receive top-notch products and service.
+      </p>
+      <h2>Our Story</h2>
+      <p>TWhat began as a small initial setup, e.g., "online store" has evolved into a dynamic and thriving eCommerce site, thanks to our dedicated team and loyal customers. We take pride in our journey and are excited about the future as we continue to grow and enhance our offerings.
+Thank you for choosing ecommerce. We look forward to serving you and making your shopping experience memorable.o deliver high-quality products at competitive prices while ensuring customer satisfaction.We envision a world where shopping online is not only effortless but also enjoyable. Our goal is to become the go-to destination for product category by continuously innovating and enhancing
+        our offerings. We strive to build long-lasting relationships with our customers, grounded in trust and satisfaction.</p>
+      <h2>Our Vision</h2>
+      <p>To be the leading eCommerce platform known for innovation, customer service, and quality.e envision a world where shopping online is not only effortless but also enjoyable. Our goal is to become the go-to destination for [product category] by continuously innovating and enhancing our offerings. 
+        We strive to build long-lasting relationships with our customers, grounded in trust and satisfaction.</p>
+        <h2>Our Mission</h2>
+        <p>At Your Store Name, we are committed to delivering exceptional value through our carefully curated selection of products/services. 
+          Our mission is to offer an unparalleled shopping experience that combines quality, affordability, and convenience. We aim to exceed your expectations with every purchase, ensuring you receive top-notch products and service.</p>
+      <h2>Our Values</h2>
+      <ul>
+        <li>Customer Satisfaction</li>
+        <li>Integrity</li>
+        <li>Innovation</li>
+        <li>Quality</li>
+        <li>Teamwork</li>
+      </ul>
+      </div>
     )
 }
 
