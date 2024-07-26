@@ -14,6 +14,7 @@ import Login from './login';
 import About from './about';
 import Home from './home';
 import '../design/view.css';
+import Contact from './contact';
 
 
 function Header() {
@@ -60,15 +61,15 @@ function Header() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="xxl">
-        <Box sx={{bgcolor:'rgba(247, 228, 196, 0.922)',height: 'auto' }} >
+      <Container maxWidth="xxxl">
+        <Box sx={{height: 'auto' }} >
         <Router >
-        <Grid container spacing={5} sx={{bgcolor:'white',padding: '2px',borderRadius:'5px',marginLeft:'25px',maxWidth:'1930px'}}>
+        <Grid container spacing={2} sx={{bgcolor:'white',padding: '2px',borderRadius:'5px'}}>
         <Grid xs>
-        <img src={require('../assets/logo1.png')} alt="" height={100} width={250} />
+        <img src={require('../assets/logo3.png')} alt="" height={150} width={500} />
         </Grid>
-        <Grid xs={5}>
-        <Search sx={{marginTop:'20px',height:'50px',bgcolor:'#f0f0f0'}}>
+        <Grid xs={4}>
+        <Search sx={{marginTop:'50px',height:'50px',bgcolor:'#f0f0f0'}}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -84,6 +85,7 @@ function Header() {
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About Us</Link></li>
+                        <li><Link to="/contact">Contact Us</Link></li>
                         <li><Link to="/login"><FaRegUserCircle/> Login</Link></li>
                         <li><button style={{border:'none',backgroundColor:'white'}} onClick={notify}><FaCartPlus/></button><ToastContainer /></li>
                     </ul>
@@ -94,6 +96,7 @@ function Header() {
       <Routes>
                         <Route path="/" element={<Home/>}></Route>
                         <Route path="/about"element={<About />}></Route>
+                        <Route path="/contact"element={<Contact />}></Route>
                         <Route path="/login"element={<Login />} ></Route>
                     </Routes>
                     </Router>

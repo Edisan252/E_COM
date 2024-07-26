@@ -39,8 +39,7 @@ function Login() {
     const [password, setPassword] = useState('');
     const handleLogin = () => {
         if (username === 'admin' && password === '1234') {
-            toast.success(username+ ' loggedin successfully', {
-              position: toast.POSITION.TOP_CENTER});
+            toast.success(username+ ' loggedin successfully');
         } else {
             toast.error('Invalid username or password');
         }
@@ -84,7 +83,7 @@ function Login() {
             <button onClick={logOut}>Log out</button>
           </div>
         ) : (
-          <button onClick={login_go}><img src={require('../assets/gmail.png')} alt=""height={50} width={50}/> Sign in with Google</button>
+          <button onClick={login_go} style={{marginRight:'350px'}}><img src={require('../assets/gmail.png')} alt=""height={50} width={50}/> Sign in with Google</button>
         )}
       </div>
     </div><br /><br/><br/>
