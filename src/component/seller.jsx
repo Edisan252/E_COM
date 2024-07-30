@@ -46,7 +46,7 @@ function Seller() {
       ];
   return (
     <>
-     <Container maxWidth="lg">
+     <Container>
     <div className='home'><br/>
     <h1 style={{marginRight:'700px'}}>Best Seller</h1><br />
     <div className="shopping-cart">
