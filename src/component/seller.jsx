@@ -1,6 +1,5 @@
 import React from 'react'
 import {Card, CardBody, CardFooter} from "@nextui-org/react";
-import Container from '@mui/material/Container';
 function Seller() {
     const list = [
         {
