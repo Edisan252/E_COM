@@ -19,25 +19,25 @@ const ShoppingCart = () => {
     { id: 8, name: 'Maanaka', price: 495, image: 'd8.webp', quantity: 1, rating: 0, category: 'dress'  },
     { id: 9, name: 'Kuber', price: 501, image: 'd9.webp', quantity: 1, rating: 0, category: 'dress'  },
     { id: 10, name: 'Fashioanl', price: 559, image: 'd10.webp', quantity: 1, rating: 0, category: 'dress'  },
-    { id: 11, name: 'Jiyansh', price: '2,040', image: 'd11.webp', quantity: 1, rating: 0, category: 'dress'  },
-    { id: 12, name: 'Vikatab', price:'1,040', image: 'd12.webp', quantity: 1, rating: 0, category: 'dress'  }, 
+    { id: 11, name: 'Jiyansh', price: 2040, image: 'd11.webp', quantity: 1, rating: 0, category: 'dress'  },
+    { id: 12, name: 'Vikatab', price: 1040, image: 'd12.webp', quantity: 1, rating: 0, category: 'dress'  }, 
 
-    { id: 13, name: 'Flipzon', price: '1,049', image: 'f1.webp', quantity: 1, rating: 0, category: 'furniture' },
+    { id: 13, name: 'Flipzon', price: 1049, image: 'f1.webp', quantity: 1, rating: 0, category: 'furniture' },
     { id: 14, name: 'Attache PP', price: 359, image: 'f2.webp', quantity: 1, rating: 0, category: 'furniture' },
-    { id: 15, name: 'Attache Carbon', price: '2,879', image: 'f3.webp', quantity: 1, rating: 0, category: 'furniture' },
+    { id: 15, name: 'Attache Carbon', price: 2879, image: 'f3.webp', quantity: 1, rating: 0, category: 'furniture' },
     { id: 16, name: 'Hemoviya', price: 849, image: 'f4.webp', quantity: 1, rating: 0, category: 'furniture' },
     { id: 17, name: 'Dewberries', price: 469, image: 'f5.webp', quantity: 1, rating: 0, category: 'furniture' },
     { id: 18, name: 'Carbon Steel', price: 347, image: 'f6.webp', quantity: 1, rating: 0, category: 'furniture' },
-    { id: 19, name: 'Wood 2 Door', price: '7,699', image: 'f7.webp', quantity: 1, rating: 0, category: 'furniture' },
-    { id: 20, name: 'Owme PC', price: '2,502', image: 'f8.webp', quantity: 1, rating: 0, category: 'furniture' },
+    { id: 19, name: 'Wood 2 Door', price: 7699, image: 'f7.webp', quantity: 1, rating: 0, category: 'furniture' },
+    { id: 20, name: 'Owme PC', price: 2502, image: 'f8.webp', quantity: 1, rating: 0, category: 'furniture' },
 
-    { id: 21, name: 'BrucharmZ ', price: '1,002', image: 'z1.webp', quantity: 1, rating: 0, category: 'Shoes' },
+    { id: 21, name: 'BrucharmZ ', price: 1002, image: 'z1.webp', quantity: 1, rating: 0, category: 'Shoes' },
     { id: 22, name: 'Lejano Hight', price: 598, image: 'z2.webp', quantity: 1, rating: 0, category: 'Shoes' },
     { id: 23, name: 'Creer casuals', price: 578, image: 'z3.webp', quantity: 1, rating: 0, category: 'Shoes' },
     { id: 24, name: 'Brucharm', price: 839, image: 'z4.webp', quantity: 1, rating: 0, category: 'Shoes' },
     { id: 25, name: 'Bakooney', price: 678, image: 'z5.webp', quantity: 1, rating: 0, category: 'Shoes' },
     { id: 26, name: 'Zsyto Sneaker', price: 699, image: 'z6.webp', quantity: 1, rating: 0, category: 'Shoes' },
-    { id: 27, name: 'Creer canvas', price: '2,789', image: 'z7.webp', quantity: 1, rating: 0, category: 'Shoes' },
+    { id: 27, name: 'Creer canvas', price: 2789, image: 'z7.webp', quantity: 1, rating: 0, category: 'Shoes' },
     { id: 28, name: 'NEW High', price: 487, image: 'z8.webp', quantity: 1, rating: 0, category: 'Shoes' },
   // Other items
   ]);
@@ -128,7 +128,7 @@ const ShoppingCart = () => {
           <div key={item.id} className="item">
             <img src={require(`../assets/${item.image}`)} alt={item.name} className="item-image" />
             <h3 className="item-name">{item.name}</h3>
-            <p className="item-price">Price: ₹{item.price}</p>
+            <p className="item-price">Price: ₹{(item.price * item.quantity).toLocaleString()}</p>
             <StarRating rating={item.rating} onRate={(newRating) => handleRatingChange(item.id, newRating)} />
             <div className="quantity-control">
               <button onClick={() => handleQuantityChange(item.id, -1)}>-</button>
