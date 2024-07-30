@@ -1,5 +1,6 @@
 import React from 'react'
 import {Card, CardBody, CardFooter} from "@nextui-org/react";
+import Container from '@mui/material/Container';
 function Seller() {
     const list = [
         {
@@ -45,9 +46,10 @@ function Seller() {
       ];
   return (
     <>
+     <Container maxWidth="lg">
     <div className='home'><br/>
-    <h1 style={{marginRight:'1950px'}}>Best Seller</h1><br />
-    <div className="shopping-cart1">
+    <h1 style={{marginRight:'700px'}}>Best Seller</h1><br />
+    <div className="shopping-cart">
       {list.map((item, index) => (
         <Card shadow="sm" key={index} isPressable onPress={() => alert("item pressed")}>
           <CardBody className="item1">
@@ -61,6 +63,7 @@ function Seller() {
       ))}<br/>
     </div>
     </div>
+    </Container>
     </>
   )
 }

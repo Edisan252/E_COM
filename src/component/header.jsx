@@ -22,16 +22,15 @@ function Header() {
     <React.Fragment>
       <div className='container-fluid top'>
       <CssBaseline /><br/><br/>
-      <Container maxWidth="xxl">
-        <Box xs={6}sx={{height: 'auto'}} >
+      <Container maxWidth="lg">
+        <Box sx={{height: 'auto'}} >
         <Router >
-        <Grid container spacing={2} sx={{bgcolor:'white',padding: '2px',borderRadius:'5px'}}>
-        <Grid xs>
-        <img src={require('../assets/logo3.png')} alt="" height={150} width={500} style={{marginRight:'600px'}}/>
+        <Grid container spacing={1} sx={{bgcolor:'white',padding: '2px',borderRadius:'5px'}}>
+        <Grid xs={3}>
+        <img src={require('../assets/logo3.png')} alt="" height={150} width={150} style={{marginRight:'700px'}}/>
         </Grid>
-        <Grid xs={6}>
+        <Grid xs={9}>
           <div className='top1'>
-       
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/ShoppingCart">Product</Link></li>
