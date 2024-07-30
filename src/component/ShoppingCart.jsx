@@ -141,7 +141,7 @@ const ShoppingCart = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div><br />
     </>
   );
 };

@@ -10,13 +10,13 @@ function Home() {
     <div className='home'>
     <Carousel style={{marginTop:'10px'}}>
       <Carousel.Item interval={500}>
-        <img src={require('../assets/s1.webp')} alt="" height={500} width={2150}/>
+        <img src={require('../assets/s1.webp')} alt="" height={400} width={1000}/>
       </Carousel.Item>
       <Carousel.Item interval={300}>
-      <img src={require('../assets/s2.webp')} alt=""  height={500} width={2150}/>
+      <img src={require('../assets/s2.webp')} alt=""  height={400} width={1000}/>
       </Carousel.Item>
       <Carousel.Item interval={300}>
-      <img src={require('../assets/s3.webp')} alt=""  height={500} width={2150}/>
+      <img src={require('../assets/s3.webp')} alt=""  height={400} width={1000}/>
       </Carousel.Item>
     </Carousel>
     </div>

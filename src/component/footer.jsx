@@ -5,10 +5,10 @@ import React from "react"
   import { HiLocationMarker } from "react-icons/hi";
   import { FaSquareInstagram,FaSquareXTwitter } from "react-icons/fa6";
 function Footer() {
-    return (     
+    return (
+      <>
         <div className="bg-dark">
-            <div className='container-fluid'>
-                <div className="row py-5 text-white">
+                <div className="row  text-white">
                <div className="col-3">
                 <h2 className="text-info" >A TO Z MARKET</h2>
                 <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, libero.</h2>
@@ -58,9 +58,8 @@ function Footer() {
         </div>  
        
        </div>
-         </div> <br/>
-            </div>
-                    
+         </div> <br/>     
+            </>         
     );
 }
  

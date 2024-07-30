@@ -46,7 +46,7 @@ function Seller() {
   return (
     <>
     <div className='home'><br/>
-    <h1 style={{marginRight:'700px'}}>Best Seller</h1><br />
+    <h1 style={{marginRight:'900px'}}>Best Seller</h1><br />
     <div className="shopping-cart">
       {list.map((item, index) => (
         <Card shadow="sm" key={index} isPressable onPress={() => alert("item pressed")}>
