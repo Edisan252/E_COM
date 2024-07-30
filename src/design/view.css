@@ -467,7 +467,7 @@
 .star-rating {
   display: flex;
   cursor: pointer;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 .star {
@@ -490,7 +490,7 @@
 
 
 .search-input {
-  width: 800px;
+  width: 500px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -503,7 +503,7 @@
 }
 .b1{
 padding: 20px;
-margin-right: 10px;
+margin-right: 20px;
 }
 .item button{
 background-color: #27f353;
@@ -517,15 +517,14 @@ padding: 10px;
   background-color: rgba(221, 226, 221, 0.692);
   padding: 10px;
   margin: 10px;
-  margin-left: 75px;
   text-align: center;
-  width: 350px;
+  width: 250px;
 }
 .item:hover{
 
 border-color: #da11b8;
 box-shadow: #333;
-width: 350px;
+/* width: 250px; */
 }
 
 .item-image {
@@ -570,7 +569,7 @@ border-radius: 20px;
 display: flex;
 margin-top: 20px;
 align-items: center;
-margin-left: 100px;
+margin-left:50px;
 }
 
 .quantity-control button {
